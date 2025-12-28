@@ -1,0 +1,104 @@
+/* -------------------------------------- */
+/* SEÇÃO: PROJETOS */
+/* -------------------------------------- */
+
+.projetos-section {
+    padding: 60px 20px;
+    background-color: #19191a; /* Mesmo fundo do tecnologias */
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 3fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Card de Projeto */
+.project-card {
+    background-color: #252526;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-image {
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+    border-radius: 0;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-title {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.project-desc {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Badges de Tecnologias dentro do projeto */
+.project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tech-badge {
+    background-color: #333;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Botões de links */
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Azul padrão */
+    transition:  0.3s;
+}
+
+.btn-link.secondary {
+    background-color: #444;
+}
+
+.btn-link:hover {
+    filter: brightness(1.2);
+}
+
+/* Responsividade Mobile */
+@media (max-width: 480px) {
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+}

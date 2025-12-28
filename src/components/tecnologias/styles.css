@@ -1,0 +1,117 @@
+/* -------------------------------------- */
+/* SEÇÃO: TECNOLOGIAS */
+/* -------------------------------------- */
+
+.tecnologias-section {
+    padding: 90px 20px;
+    background-color: #19191a;
+    display: flex;
+    flex-direction: column;
+}
+
+.tecnologias-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff; 
+}
+
+.tecnologias-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* -------------------------------------- */
+/* Card individual de tecnologia (.skill-card) */
+/* -------------------------------------- */
+.skill-card {
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Aumentado para combinar com logo maior */
+    background-color: #333; 
+    color: #f0f0f0;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 60px;
+}
+
+.skill-card:hover {
+    background-color: #414141; 
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.skill-logo {
+    width: 35px; 
+    height: 60px; 
+    object-fit: contain; 
+
+}
+
+.skill-name {
+    font-size: 16px; 
+    font-weight: 500;
+}
+
+/* -------------------------------------- */
+/* Responsividade */
+/* -------------------------------------- */
+
+/* Responsividade - Tablets */
+@media (max-width: 768px) {
+    .tecnologias-title {
+        font-size: 1.8rem;
+    }
+    
+    .skill-card {
+        padding: 12px 30px; 
+        gap: 12px;
+    }
+    .skill-logo {
+        width: 30px;
+        height: 30px;
+    }
+    .skill-name {
+        font-size: 15px;
+    }
+}
+
+/* Responsividade - Mobile */
+@media (max-width: 480px) {
+    .tecnologias-section {
+        padding: 40px 10px;
+    }
+    
+    .tecnologias-title {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .tecnologias-grid {
+        gap: 10px;
+    }
+    
+    .skill-card {
+        padding: 8px 15px; 
+        gap: 8px;
+    }
+    
+    .skill-logo {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .skill-name {
+        font-size: 14px;
+    }
+}

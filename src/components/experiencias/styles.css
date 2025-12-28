@@ -1,0 +1,200 @@
+/* Container principal */
+.container-experiencia {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    gap: 40px;
+    text-align: center;
+}
+
+/* Cabeçalho da seção */
+.cabecalho-experiencia {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid de experiências */
+.experiencias-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+/* Card individual de experiência */
+.container-experiencia-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #383838;
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-experiencia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo da empresa (ESQUERDA) */
+.experiencia-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+/* Container do conteúdo (DIREITA EM COLUNA) */
+.experiencia-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    text-align: left;
+}
+
+/* Informações (nome + função) */
+.experiencia-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Título com nome e período */
+.experiencia-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.experiencia-empresa {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+/* Período (data) */
+.experiencia-periodo {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.experiencia-funcao {
+    font-size: 1.1rem;
+    color: #abc7e7;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Descrição */
+.experiencia-descricao {
+    font-size: 1rem;
+    color: #d1d1d1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsividade - Tablets */
+@media (max-width: 768px) {
+    .container-experiencia {
+        padding-top: 60px;
+        gap: 30px;
+    }
+
+    .experiencias-grid {
+        gap: 20px;
+        padding: 0 15px 30px;
+    }
+
+    .container-experiencia-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .experiencia-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .experiencia-titulo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .experiencia-empresa {
+        font-size: 1.3rem;
+    }
+
+    .experiencia-periodo {
+        font-size: 0.85rem;
+    }
+
+    .experiencia-funcao {
+        font-size: 1rem;
+    }
+
+    .experiencia-descricao {
+        font-size: 0.95rem;
+    }
+}
+
+/* Responsividade - Mobile */
+@media (max-width: 480px) {
+    .container-experiencia-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .experiencia-header {
+        text-align: center;
+    }
+
+    .experiencia-titulo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experiencia-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .experiencia-empresa {
+        font-size: 1.2rem;
+    }
+
+    .experiencia-periodo {
+        font-size: 0.8rem;
+    }
+
+    .experiencia-funcao {
+        font-size: 0.95rem;
+    }
+
+    .experiencia-descricao {
+        font-size: 0.9rem;
+    }
+}
