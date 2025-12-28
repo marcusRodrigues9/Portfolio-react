@@ -12,7 +12,7 @@ const projects = [
     image: encurtadorImg,
     techs: ['Spring Boot', 'Java', 'H2'],
     github: 'https://github.com/marcusRodrigues9/encurtador-url',
-    demo: 'https://encurtador-url.vercel.app'
+    demo: 'https://encurtador-url-navy.vercel.app'
   },
   {
     id: 2,
